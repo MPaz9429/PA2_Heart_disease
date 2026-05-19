@@ -36,9 +36,9 @@ si un paciente presenta riesgo de enfermedad cardíaca.
 
 st.write("### Información del Proyecto")
 st.write("**Nombre:** Mercedes Fiorela Paz Alejandro")
-st.write("**Código ISIL:** TU_CODIGO")
+st.write("**Código ISIL:** 75723526")
 
-st.write("[Ver cuaderno Google Colab](PEGA_AQUI_TU_LINK)")
+st.write("[Ver cuaderno Google Colab](https://colab.research.google.com/drive/1dBmYDTp4iFJ6Onoa7XzO0D4Q1lB5YwXY?usp=sharing)")
 
 # =========================
 # SELECCIÓN DE MODELO
