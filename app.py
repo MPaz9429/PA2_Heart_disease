@@ -163,7 +163,8 @@ if st.button("Realizar Predicción"):
     else:
         prediccion = modelo_random_forest.predict(datos)
 
-if prediccion[0] == 0:
-    st.error("⚠️ El modelo predice mayor riesgo de enfermedad cardíaca.")
-else:
-    st.success("✅ El modelo predice menor riesgo de enfermedad cardíaca.")
+    if prediccion[0] == 0:
+        st.error("⚠️ El modelo predice mayor riesgo de enfermedad cardíaca.")
+
+    else:
+        st.success("✅ El modelo predice menor riesgo de enfermedad cardíaca.")
