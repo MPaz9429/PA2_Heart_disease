@@ -1,0 +1,9 @@
+PROMPT UTILIZADO:
+
+Genera una página web en Streamlit desde GitHub. Esta página debe contener dos modelos entrenados para predecir enfermedad cardíaca: modelo_logistico.pkl y modelo_random_forest.pkl. Ambos modelos están guardados en una carpeta llamada modelos.
+
+El aplicativo debe permitir que el usuario ingrese las variables del dataset Heart Disease: age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca y thal.
+
+También debe permitir seleccionar entre Regresión Logística y Random Forest. Finalmente, debe mostrar un botón para realizar la predicción e indicar si el paciente presenta o no enfermedad cardíaca.
+
+Ten en cuenta que la interfaz debe ser amigable con el usuario y el tema central debe ser predecir la enfermedad cardíaca.
