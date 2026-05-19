@@ -157,12 +157,14 @@ datos = pd.DataFrame({
 
 if st.button("Realizar Predicción"):
 
-if modelo_seleccionado == "Regresión Logística":
-    prediccion = modelo_logistico.predict(datos)
-else:
-    prediccion = modelo_random_forest.predict(datos)
+    if modelo_seleccionado == "Regresión Logística":
+        prediccion = modelo_logistico.predict(datos)
 
-if prediccion[0] == 0:
-    st.error("⚠️ El modelo predice presencia de enfermedad cardíaca.")
-else:
-    st.success("✅ El modelo predice ausencia de enfermedad cardíaca.")
+    else:
+        prediccion = modelo_random_forest.predict(datos)
+
+    if prediccion[0] == 0:
+        st.error("⚠️ El modelo predice presencia de enfermedad cardíaca.")
+
+    else:
+        st.success("✅ El modelo predice ausencia de enfermedad cardíaca.")
